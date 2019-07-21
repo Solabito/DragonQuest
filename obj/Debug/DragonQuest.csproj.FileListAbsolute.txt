@@ -1,0 +1,10 @@
+C:\Users\sola\source\repos\DragonQuest\bin\Debug\DragonQuest.exe.config
+C:\Users\sola\source\repos\DragonQuest\bin\Debug\DragonQuest.exe
+C:\Users\sola\source\repos\DragonQuest\bin\Debug\DragonQuest.pdb
+C:\Users\sola\source\repos\DragonQuest\obj\Debug\DragonQuest.csprojAssemblyReference.cache
+C:\Users\sola\source\repos\DragonQuest\obj\Debug\DragonQuest.AddCharacterForm.resources
+C:\Users\sola\source\repos\DragonQuest\obj\Debug\DragonQuest.Properties.Resources.resources
+C:\Users\sola\source\repos\DragonQuest\obj\Debug\DragonQuest.csproj.GenerateResource.cache
+C:\Users\sola\source\repos\DragonQuest\obj\Debug\DragonQuest.csproj.CoreCompileInputs.cache
+C:\Users\sola\source\repos\DragonQuest\obj\Debug\DragonQuest.exe
+C:\Users\sola\source\repos\DragonQuest\obj\Debug\DragonQuest.pdb
