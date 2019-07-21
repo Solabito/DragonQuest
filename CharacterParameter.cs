@@ -20,10 +20,15 @@ namespace DragonQuest
         {
             Name = name;
             MaxHP = maxhp;
+            HP = MaxHP;
             MaxMP = maxmp;
             Attack = attack;
             Defence = defence;
             Speed = speed;
+        }
+
+        public void Damage(int damage) {
+            HP -= damage;
         }
     }
 }

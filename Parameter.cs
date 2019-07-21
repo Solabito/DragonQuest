@@ -8,11 +8,12 @@ namespace DragonQuest
 {
     abstract class Parameter
     {
-        protected string Name    { get; set; }
-        protected int    MaxHP   { get; set; }
-        protected int    MaxMP   { get; set; }
-        protected int    Attack  { get; set; }
-        protected int    Defence { get; set; }
-        protected int    Speed   { get; set; }
+        public string Name    { get; set; }
+        public int    MaxHP   { get; set; }
+        public int    MaxMP   { get; set; }
+        public int    Attack  { get; set; }
+        public int    Defence { get; set; }
+        public int    Speed   { get; set; }
+        public int    HP      { get; set; }
     }
 }
