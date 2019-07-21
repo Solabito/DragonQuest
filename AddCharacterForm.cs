@@ -66,7 +66,13 @@ namespace DragonQuest
 
         private void AddCharacterButton_Click(object sender, EventArgs e)
         {
-            Character Player = new Character(InputName, InputMaxHP ,InputMaxMP, InputAttack, InputDefence, InputSpeed);
+            CharacterParameter Player = new CharacterParameter(InputName, InputMaxHP ,InputMaxMP, InputAttack, InputDefence, InputSpeed);
+            Console.WriteLine(InputName);
+            Console.WriteLine(InputMaxHP); 
+            Console.WriteLine(InputMaxMP); 
+            Console.WriteLine(InputAttack);
+            Console.WriteLine(InputDefence);
+            Console.WriteLine(InputSpeed);
         }
     }
 }
