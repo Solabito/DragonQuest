@@ -52,7 +52,9 @@
     <Compile Include="AddCharacterForm.Designer.cs">
       <DependentUpon>AddCharacterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Character.cs" />
+    <Compile Include="CharacterParameter.cs" />
+    <Compile Include="Parameter.cs" />
+    <Compile Include="EnemyParameter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

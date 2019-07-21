@@ -13,11 +13,13 @@ namespace DragonQuest
     public partial class AddCharacterForm : Form
     {
         private string InputName;
-        private int    InputMaxHP;
-        private int    InputMaxMP;
-        private int    InputAttack;
-        private int    InputDefence;
-        private int    InputSpeed;
+        private int InputMaxHP;
+        private int InputMaxMP;
+        private int InputAttack;
+        private int InputDefence;
+        private int InputSpeed;
+        List<CharacterParameter> Players = new List<CharacterParameter>();
+        private int Counter;
 
         public AddCharacterForm()
         {
@@ -26,12 +28,13 @@ namespace DragonQuest
 
         private void AddCharacterForm_Load(object sender, EventArgs e)
         {
-            InputName    = NameTextBox.Text;
-            InputMaxHP   = (Int32)MaxHPUpDown.Value;
-            InputMaxMP   = (Int32)MaxMPUpDown.Value;
-            InputAttack  = (Int32)AttackUpDown.Value;
+            InputName = NameTextBox.Text;
+            InputMaxHP = (Int32)MaxHPUpDown.Value;
+            InputMaxMP = (Int32)MaxMPUpDown.Value;
+            InputAttack = (Int32)AttackUpDown.Value;
             InputDefence = (Int32)DefenceUpDown.Value;
-            InputSpeed   = (Int32)SpeedUpDown.Value;
+            InputSpeed = (Int32)SpeedUpDown.Value;
+            Counter = 0;
         }
 
         private void NameTextBox_TextChanged(object sender, EventArgs e)
@@ -66,7 +69,23 @@ namespace DragonQuest
 
         private void AddCharacterButton_Click(object sender, EventArgs e)
         {
-            Character Player = new Character(InputName, InputMaxHP ,InputMaxMP, InputAttack, InputDefence, InputSpeed);
+            CharacterParameter tmpPlayer = new CharacterParameter(InputName, InputMaxHP, InputMaxMP, InputAttack, InputDefence, InputSpeed);
+            Players.Add(tmpPlayer);
+
+            // confirmation
+            for (int i = 0; i < Players.Count; i++)
+            {
+                Console.WriteLine("");
+                Console.WriteLine(i + 1);
+                Players[i].Damage(i+1);
+                Console.WriteLine(Players[i].Name);
+                Console.WriteLine(Players[i].HP+"/"+Players[i].MaxHP);
+                Console.WriteLine(Players[i].MaxMP);
+                Console.WriteLine(Players[i].Attack);
+                Console.WriteLine(Players[i].Defence);
+                Console.WriteLine(Players[i].Speed);
+            }
+
         }
     }
 }
