@@ -76,8 +76,7 @@ namespace DragonQuest
             for (int i = 0; i < Players.Count; i++)
             {
                 Console.WriteLine("");
-                Console.WriteLine(i + 1);
-                Players[i].Damage(i+1);
+                Players[i].Damage(100,Players[i].Defence);
                 Console.WriteLine(Players[i].Name);
                 Console.WriteLine(Players[i].HP+"/"+Players[i].MaxHP);
                 Console.WriteLine(Players[i].MaxMP);
